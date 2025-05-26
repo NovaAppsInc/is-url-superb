@@ -14,9 +14,9 @@ export default function isUrl(string, {lenient = false} = {}) {
 		new URL(string); // eslint-disable-line no-new
 		return true;
 	} catch {
-        if (lenient && isDomain(string) === true) {
-			return true
-		};
-        return false;
+		if (lenient && isDomain(string) === true) {
+			return true;
+		}
+		return false;
 	}
 }
