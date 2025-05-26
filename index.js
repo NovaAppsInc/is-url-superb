@@ -17,6 +17,7 @@ export default function isUrl(string, {lenient = false} = {}) {
 		if (lenient && isDomain(string) === true) {
 			return true;
 		}
+
 		return false;
 	}
 }
